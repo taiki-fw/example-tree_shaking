@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "example webpack tree-shaking",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack --display-used-exports"
+  },
   "devDependencies": {
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
