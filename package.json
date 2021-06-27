@@ -4,7 +4,8 @@
   "description": "example webpack tree-shaking",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --display-used-exports"
+    "build:dev": "webpack --display-used-exports",
+    "build": "WEBPACK_ENV=production webpack --display-used-exports"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",

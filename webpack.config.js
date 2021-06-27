@@ -1,7 +1,9 @@
 const path = require("path");
 
+const mode = process.env.WEBPACK_ENV || "development";
+
 module.exports = {
-  mode: "production",
+  mode,
   entry: "./src/index.js",
   output: {
     filename: "bundle.js",
@@ -17,6 +19,6 @@ module.exports = {
     ],
   },
   optimization: {
-    usedExports: true,
+    usedExports: mode === "production",
   },
 };
